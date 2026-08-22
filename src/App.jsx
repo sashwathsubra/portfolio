@@ -171,7 +171,10 @@ export default function Portfolio() {
                 <li><strong className="text-zinc-200 font-medium">Cisco Networking Academy:</strong> Verified in Python Essentials 1, Operating Systems Basics, and Networking Basics.</li>
                 <li><strong className="text-zinc-200 font-medium">MongoDB:</strong> MongoDB Basics Certified (Credly Verified).</li>
                 <li><strong className="text-zinc-200 font-medium">Wadhwani Foundation:</strong> Completed 42 hours of coursework in business modeling and financial planning via Ignite India.</li>
-                <li><strong className="text-zinc-200 font-medium">Continuous Education:</strong> Currently pursuing advanced Python, Data Science, and Network Security via NPTEL & Udemy.</li>
+                <li><strong className="text-zinc-200 font-medium">IBM SkillsBuild:</strong> "Getting Started with Artificial Intelligence" (Credly verified, Mar 12, 2026). {/* TODO: add certificate image asset once uploaded — see IBM SkillsBuild */}</li>
+                <li><strong className="text-zinc-200 font-medium">Anthropic:</strong> "AI Fluency: Framework & Foundations" (Completed). {/* TODO: add certificate image asset once uploaded — see Anthropic AI Fluency */}</li>
+                <li><strong className="text-zinc-200 font-medium">NPTEL:</strong> "Data Science for Engineers" (Completed, 8-week course, Jan–Mar 2026). {/* TODO: add certificate image asset once uploaded — see NPTEL Data Science */}</li>
+                <li><strong className="text-zinc-200 font-medium">NPTEL:</strong> "Cryptography and Network Security" (Completed, 12-week course, Jan–Apr 2026). {/* TODO: add certificate image asset once uploaded — see NPTEL Cryptography */}</li>
               </ul>
             </div>
 
@@ -179,6 +182,7 @@ export default function Portfolio() {
             <div>
               <h3 className="text-white font-medium flex items-center gap-2 mb-4 border-b border-zinc-800 pb-2"><GraduationCap size={16} className="text-zinc-400"/> Academic Recognitions</h3>
               <ul className="space-y-3 text-sm text-zinc-400">
+                <li><strong className="text-zinc-200 font-medium">CELISTA '26:</strong> 3rd place, "Borderland" event, National Level Technical Symposium, Dept. of AI & Data Science, Meenakshi Sundararajan Engineering College (17.03.2026).</li>
                 <li><strong className="text-zinc-200 font-medium">ANU STEM Challenge (2021-22):</strong> Awarded Certificate of Merit by the Australian National University for ranking in the Top 15% of the India cohort.</li>
                 <li><strong className="text-zinc-200 font-medium">ISRO State Quiz (2020):</strong> Secured 3rd Prize at the state level during World Space Week, conducted by SDSC SHAR, ISRO.</li>
               </ul>
@@ -192,6 +196,9 @@ export default function Portfolio() {
                   <strong className="text-zinc-200 font-medium">HackerRank:</strong> Achieved 6-Star Gold in Data Structures & Algorithms, and 5-Star Silver in Java.
                 </p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mt-2">
+                  {/* TODO: MSEC "E-Cube" paper/project presentation — prize position unconfirmed */}
+                  {/* TODO: Innovator's Fest '26 — prize position unconfirmed */}
+                  {/* TODO: TechBeyond'26 — conflicting records (2nd place win vs. participation in "Mind Layer Hackathon – Frontend Player") — do not list as a win until confirmed */}
                   <p>• 1st Prize – Technical Quiz (Velammal Tech)</p>
                   <p>• 1st Prize – Technical Presentation</p>
                   <p>• Best Paper Award (Velammal Eng.)</p>
