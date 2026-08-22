@@ -27,6 +27,9 @@ export default function Portfolio() {
             <a href="https://www.hackerrank.com/profile/sashwathsub" target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-zinc-400 hover:text-[#2EC866] transition-colors">
               HackerRank
             </a>
+            <a href="https://leetcode.com/sashwathsubramaniam" target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-zinc-400 hover:text-[#FFA116] transition-colors">
+              LeetCode
+            </a>
             <a href="https://www.credly.com/users/s-sashwath-subramaniam" target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-zinc-400 hover:text-[#FF6B00] transition-colors hidden sm:block">
               Credly
             </a>
@@ -105,7 +108,7 @@ export default function Portfolio() {
             <div className="group">
               <div className="flex items-center justify-between mb-2">
                 <h3 className="text-xl font-medium text-white">Brim Clocks Platform</h3>
-                <a href="https://brimclocks.com" target="_blank" rel="noreferrer" className="flex items-center gap-1 text-sm font-medium text-blue-400 hover:text-blue-300 transition-colors">
+                <a href="https://www.brimclocks.com" target="_blank" rel="noreferrer" className="flex items-center gap-1 text-sm font-medium text-blue-400 hover:text-blue-300 transition-colors">
                   Live Site <ArrowUpRight size={16} />
                 </a>
               </div>
@@ -127,7 +130,10 @@ export default function Portfolio() {
                 </a>
               </div>
               <ul className="list-disc list-outside ml-4 text-zinc-400 space-y-2 leading-relaxed">
-                <li><strong className="text-zinc-300 font-medium">AI Job Predictor:</strong> Engineered a predictive model utilizing historical dataset analysis to forecast industry-specific career opportunities.</li>
+                <li>
+                  <strong className="text-zinc-300 font-medium">AI Job Predictor:</strong> Engineered a predictive model utilizing historical dataset analysis to forecast industry-specific career opportunities.
+                  <a href="https://ai-job-predictor-tau.vercel.app" target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 text-xs font-medium text-blue-400 hover:text-blue-300 transition-colors ml-2">Live Site <ArrowUpRight size={12} /></a>
+                </li>
                 <li><strong className="text-zinc-300 font-medium">AI Plagiarism Detector:</strong> Developed an algorithmic tool designed to detect structural similarities and plagiarism across standard text and programming source code.</li>
               </ul>
               <div className="flex gap-2 mt-4 text-xs font-mono text-zinc-500">
@@ -146,6 +152,22 @@ export default function Portfolio() {
                 <span className="px-2 py-1 bg-zinc-900 border border-zinc-800 rounded">IoT</span>
                 <span className="px-2 py-1 bg-zinc-900 border border-zinc-800 rounded">Mathematics</span>
                 <span className="px-2 py-1 bg-zinc-900 border border-zinc-800 rounded">C++</span>
+              </div>
+            </div>
+
+            <div className="group">
+              <div className="flex items-center justify-between mb-2">
+                <h3 className="text-xl font-medium text-white">PDF Teacher</h3>
+                <a href="https://pdf-teacher-phi.vercel.app" target="_blank" rel="noreferrer" className="flex items-center gap-1 text-sm font-medium text-blue-400 hover:text-blue-300 transition-colors">
+                  Live Site <ArrowUpRight size={16} />
+                </a>
+              </div>
+              <p className="text-zinc-400 leading-relaxed">
+                An interactive application to assist with educational material processing and PDF-based instruction.
+              </p>
+              <div className="flex gap-2 mt-4 text-xs font-mono text-zinc-500">
+                <span className="px-2 py-1 bg-zinc-900 border border-zinc-800 rounded">React</span>
+                <span className="px-2 py-1 bg-zinc-900 border border-zinc-800 rounded">Vercel</span>
               </div>
             </div>
 
@@ -199,14 +221,6 @@ export default function Portfolio() {
                   {/* TODO: MSEC "E-Cube" paper/project presentation — prize position unconfirmed */}
                   {/* TODO: Innovator's Fest '26 — prize position unconfirmed */}
                   {/* TODO: TechBeyond'26 — conflicting records (2nd place win vs. participation in "Mind Layer Hackathon – Frontend Player") — do not list as a win until confirmed */}
-                  <p>• 1st Prize – Technical Quiz (Velammal Tech)</p>
-                  <p>• 1st Prize – Technical Presentation</p>
-                  <p>• Best Paper Award (Velammal Eng.)</p>
-                  <p>• 2nd Prize – Debugging (Velammal Eng.)</p>
-                  <p>• 2nd Prize – Paper Presentation</p>
-                  <p>• 3rd Position – MSEC Codathon (2024-25)</p>
-                  <p>• 3rd Prize – AI/ML Tech Event</p>
-                  <p>• 1st/3rd Prizes – Cultural JAM Events</p>
                 </div>
               </div>
             </div>
