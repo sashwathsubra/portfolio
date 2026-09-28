@@ -54,7 +54,7 @@ export default function Portfolio() {
           className="space-y-4"
         >
           <motion.div variants={itemVariants} className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-zinc-800/50 border border-zinc-700/50 text-xs font-medium text-zinc-300 tracking-wide uppercase">
-            B.E. Computer Science & Engineering — GPA: 8.35
+            B.E. Computer Science & Engineering
           </motion.div>
           <motion.div variants={itemVariants} className="overflow-hidden">
             <motion.h1 
@@ -248,7 +248,7 @@ export default function Portfolio() {
             <motion.div className="hover:-translate-y-1 transition-transform duration-300" variants={itemVariants} initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-50px" }}>
               <h3 className="text-white font-medium flex items-center gap-2 mb-3 border-b border-zinc-800 pb-2"><FileText size={16} className="text-zinc-400"/> Industry Certifications</h3>
               <ul className="space-y-2.5 text-sm text-zinc-400">
-                <li><strong className="text-zinc-200 font-medium">NPTEL:</strong> Data Science for Engineers (Elite, 69%); Cryptography & Network Security (Elite, 71%); Advanced Computer Networks (58%).</li>
+                <li><strong className="text-zinc-200 font-medium">NPTEL:</strong> Data Science for Engineers (Elite); Cryptography & Network Security (Elite); Advanced Computer Networks.</li>
                 <li><strong className="text-zinc-200 font-medium">Cisco NetAcad:</strong> Python Essentials 1, Networking Basics, Operating Systems Basics.</li>
                 <li><strong className="text-zinc-200 font-medium">IBM SkillsBuild:</strong> Getting Started with Artificial Intelligence.</li>
                 <li><strong className="text-zinc-200 font-medium">Udemy:</strong> Complete Python Bootcamp (In Progress).</li>
