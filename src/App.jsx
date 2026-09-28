@@ -54,14 +54,14 @@ export default function Portfolio() {
           className="space-y-4"
         >
           <motion.div variants={itemVariants} className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-zinc-800/50 border border-zinc-700/50 text-xs font-medium text-zinc-300 tracking-wide uppercase">
-            B.E. Computer Science & Engineering
+            B.E. Computer Science & Engineering — GPA: 8.35
           </motion.div>
           <motion.div variants={itemVariants} className="overflow-hidden">
             <motion.h1 
               initial={{ y: "100%" }} animate={{ y: 0 }} transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
               className="text-4xl md:text-6xl font-medium tracking-tight text-white leading-tight"
             >
-              Software Engineer & <br className="hidden md:block"/>AI/ML Developer.
+              Full-Stack Developer <br className="hidden md:block"/>& AI/ML Engineer.
             </motion.h1>
           </motion.div>
           <motion.p variants={itemVariants} className="text-lg text-zinc-400 max-w-2xl leading-relaxed">
@@ -90,19 +90,19 @@ export default function Portfolio() {
           <div className="md:col-span-3 grid sm:grid-cols-2 gap-5">
             <div className="space-y-2 group hover:-translate-y-1 transition-transform duration-300">
               <div className="flex items-center gap-2 text-white font-medium mb-2"><Code2 size={18} className="text-zinc-400"/> Programming & Web</div>
-              <p className="text-zinc-400 text-sm leading-relaxed">Python, SQL, Java, C, C++. Full-stack web development utilizing React, Git version control, and production deployment pipelines.</p>
+              <p className="text-zinc-400 text-sm leading-relaxed">Python (Strong), Java, SQL, C. Git, and Full-Stack Development pipelines.</p>
             </div>
             <div className="space-y-2 group hover:-translate-y-1 transition-transform duration-300">
-              <div className="flex items-center gap-2 text-white font-medium mb-2"><BrainCircuit size={18} className="text-zinc-400"/> Machine Learning</div>
-              <p className="text-zinc-400 text-sm leading-relaxed">Development of predictive modeling algorithms, data analytics, and automated detection systems (NLP & Code Structure analysis).</p>
+              <div className="flex items-center gap-2 text-white font-medium mb-2"><BrainCircuit size={18} className="text-zinc-400"/> AI & Machine Learning</div>
+              <p className="text-zinc-400 text-sm leading-relaxed">Machine Learning, Natural Language Processing (NLP), and Predictive Modeling.</p>
             </div>
             <div className="space-y-2 group hover:-translate-y-1 transition-transform duration-300">
-              <div className="flex items-center gap-2 text-white font-medium mb-2"><ShieldCheck size={18} className="text-zinc-400"/> Networking & Hardware</div>
-              <p className="text-zinc-400 text-sm leading-relaxed">Cisco NetAcad certified. Experience with network topologies, Operating System fundamentals, and IoT sensor integration.</p>
+              <div className="flex items-center gap-2 text-white font-medium mb-2"><ShieldCheck size={18} className="text-zinc-400"/> Networking & OS</div>
+              <p className="text-zinc-400 text-sm leading-relaxed">Cisco NetAcad certified. Network Fundamentals, Operating Systems Basics, IoT Systems Design.</p>
             </div>
             <div className="space-y-2 group hover:-translate-y-1 transition-transform duration-300">
-              <div className="flex items-center gap-2 text-white font-medium mb-2"><Database size={18} className="text-zinc-400"/> Architecture & Strategy</div>
-              <p className="text-zinc-400 text-sm leading-relaxed">MongoDB database management, technical documentation, and implementation of commercial SEO architectures.</p>
+              <div className="flex items-center gap-2 text-white font-medium mb-2"><Database size={18} className="text-zinc-400"/> Other Competencies</div>
+              <p className="text-zinc-400 text-sm leading-relaxed">Technical Writing, Leadership, Communication Skills.</p>
             </div>
           </div>
         </motion.section>
@@ -118,7 +118,49 @@ export default function Portfolio() {
             <h2 className="text-xs font-semibold uppercase tracking-widest text-zinc-500 mb-4">Production & Research</h2>
           </div>
           <div className="md:col-span-3 space-y-6">
-            
+            {/* Reconcile */}
+            <motion.div className="group hover:-translate-y-1 transition-transform duration-300" variants={itemVariants} initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-50px" }}>
+              <div className="flex items-center justify-between mb-2">
+                <h3 className="text-xl font-medium text-white">Reconcile — Agentic Bookkeeping</h3>
+                <div className="flex items-center gap-3">
+                  <a href="https://github.com/sashwathsubra/reconcile" target="_blank" rel="noreferrer" className="flex items-center gap-1 text-sm font-medium text-zinc-400 hover:text-white transition-colors">
+                    Code <ArrowUpRight size={16} />
+                  </a>
+                  <a href="https://reconcile-app-p4sp.onrender.com" target="_blank" rel="noreferrer" className="flex items-center gap-1 text-sm font-medium text-blue-400 hover:text-blue-300 transition-colors">
+                    Live Site <ArrowUpRight size={16} />
+                  </a>
+                </div>
+              </div>
+              <ul className="list-disc list-outside ml-4 text-zinc-400 space-y-2 leading-relaxed">
+                <li>Built an autonomous bookkeeping agent that reasons through each bank transaction step-by-step — parsing, proposing a vendor/category, and assessing confidence.</li>
+                <li>Designed confidence-based routing: high-confidence transactions post automatically, moderate request info, and low escalate to a human reviewer.</li>
+                <li>Implemented persistent learning from human corrections and end-to-end audit logging of every decision.</li>
+              </ul>
+              <div className="flex gap-2 mt-3 text-xs font-mono text-zinc-500">
+                <span className="px-2 py-1 bg-zinc-900 border border-zinc-800 rounded">Python</span>
+                <span className="px-2 py-1 bg-zinc-900 border border-zinc-800 rounded">AI Agents</span>
+                <span className="px-2 py-1 bg-zinc-900 border border-zinc-800 rounded">Full-Stack</span>
+              </div>
+            </motion.div>
+
+            {/* Live Sign Language Translator */}
+            <motion.div className="group hover:-translate-y-1 transition-transform duration-300" variants={itemVariants} initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-50px" }}>
+              <div className="flex items-center justify-between mb-2">
+                <h3 className="text-xl font-medium text-white">Live Sign Language Translator</h3>
+                <a href="https://sign-language-translator-with-custo-beige.vercel.app" target="_blank" rel="noreferrer" className="flex items-center gap-1 text-sm font-medium text-blue-400 hover:text-blue-300 transition-colors">
+                  Live Site <ArrowUpRight size={16} />
+                </a>
+              </div>
+              <p className="text-zinc-400 leading-relaxed">
+                Built a real-time sign-language translation web app that tracks live hand landmarks from a webcam feed and matches gestures against a user-trained vocabulary of recorded templates. Implemented a "teach a sign" flow letting users record and store custom gesture templates locally.
+              </p>
+              <div className="flex gap-2 mt-3 text-xs font-mono text-zinc-500">
+                <span className="px-2 py-1 bg-zinc-900 border border-zinc-800 rounded">Computer Vision</span>
+                <span className="px-2 py-1 bg-zinc-900 border border-zinc-800 rounded">Web</span>
+              </div>
+            </motion.div>
+
+            {/* Brim Clocks */}
             <motion.div className="group hover:-translate-y-1 transition-transform duration-300" variants={itemVariants} initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-50px" }}>
               <div className="flex items-center justify-between mb-2">
                 <h3 className="text-xl font-medium text-white">Brim Clocks Platform</h3>
@@ -127,15 +169,15 @@ export default function Portfolio() {
                 </a>
               </div>
               <p className="text-zinc-400 leading-relaxed">
-                Architected and deployed a full-stack commercial website for a corporate client. Implemented targeted meta-word embedding and technical SEO strategies, successfully scaling the platform to <strong>20,000+ ad-driven views</strong> while maintaining a conversion funnel that processes <strong>~50 daily client enquiries</strong>.
+                Built and deployed an end-to-end web platform for a live business. Scaled site traffic to generate <strong>20,000+ ad-driven views</strong> and consistently capture <strong>~50 daily customer enquiries</strong>.
               </p>
               <div className="flex gap-2 mt-3 text-xs font-mono text-zinc-500">
                 <span className="px-2 py-1 bg-zinc-900 border border-zinc-800 rounded">React</span>
-                <span className="px-2 py-1 bg-zinc-900 border border-zinc-800 rounded">MongoDB</span>
-                <span className="px-2 py-1 bg-zinc-900 border border-zinc-800 rounded">SEO</span>
+                <span className="px-2 py-1 bg-zinc-900 border border-zinc-800 rounded">Full-Stack</span>
               </div>
             </motion.div>
 
+            {/* PDF Teacher */}
             <motion.div className="group hover:-translate-y-1 transition-transform duration-300" variants={itemVariants} initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-50px" }}>
               <div className="flex items-center justify-between mb-2">
                 <h3 className="text-xl font-medium text-white">PDF Teacher</h3>
@@ -144,44 +186,46 @@ export default function Portfolio() {
                 </a>
               </div>
               <p className="text-zinc-400 leading-relaxed">
-                An interactive application to assist with educational material processing and PDF-based instruction.
+                Built a web app that lets users upload PDF study material and ask natural-language questions about it, as if asking a teacher.
               </p>
               <div className="flex gap-2 mt-3 text-xs font-mono text-zinc-500">
-                <span className="px-2 py-1 bg-zinc-900 border border-zinc-800 rounded">React</span>
-                <span className="px-2 py-1 bg-zinc-900 border border-zinc-800 rounded">Vercel</span>
+                <span className="px-2 py-1 bg-zinc-900 border border-zinc-800 rounded">NLP</span>
+                <span className="px-2 py-1 bg-zinc-900 border border-zinc-800 rounded">Full-Stack</span>
               </div>
             </motion.div>
 
+            {/* AI Job Predictor */}
             <motion.div className="group hover:-translate-y-1 transition-transform duration-300" variants={itemVariants} initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-50px" }}>
               <div className="flex items-center justify-between mb-2">
-                <h3 className="text-xl font-medium text-white">Machine Learning Suite</h3>
+                <h3 className="text-xl font-medium text-white">AI Job Predictor</h3>
               </div>
-              <ul className="list-disc list-outside ml-4 text-zinc-400 space-y-2 leading-relaxed">
-                <li>
-                  <strong className="text-zinc-300 font-medium">AI Job Predictor:</strong> Engineered a predictive model utilizing historical dataset analysis to forecast industry-specific career opportunities.
-                  <a href="https://ai-job-predictor-tau.vercel.app" target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 text-xs font-medium text-blue-400 hover:text-blue-300 transition-colors ml-2">Live Site <ArrowUpRight size={12} /></a>
-                </li>
-                <li>
-                  <strong className="text-zinc-300 font-medium">AI Plagiarism Detector:</strong> Developed an algorithmic tool designed to detect structural similarities and plagiarism across standard text and programming source code.
-                  <a href="https://github.com/sashwathsubra" target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 text-xs font-medium text-zinc-400 hover:text-zinc-300 transition-colors ml-2">Source Code <ArrowUpRight size={12} /></a>
-                </li>
-              </ul>
+              <p className="text-zinc-400 leading-relaxed">
+                Developed an ML classification model to predict career opportunities based on user profile inputs. Trained the model on real-world career datasets and deployed it as a functional, user-facing application.
+              </p>
               <div className="flex gap-2 mt-3 text-xs font-mono text-zinc-500">
+                <span className="px-2 py-1 bg-zinc-900 border border-zinc-800 rounded">Machine Learning</span>
                 <span className="px-2 py-1 bg-zinc-900 border border-zinc-800 rounded">Python</span>
-                <span className="px-2 py-1 bg-zinc-900 border border-zinc-800 rounded">Scikit-Learn</span>
               </div>
             </motion.div>
 
+            {/* Research Papers as Team Lead */}
             <motion.div className="group hover:-translate-y-1 transition-transform duration-300" variants={itemVariants} initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-50px" }}>
-              <h3 className="text-xl font-medium text-white mb-2">Hardware & Networking Architecture</h3>
+              <h3 className="text-xl font-medium text-white mb-2">Research & Architecture</h3>
               <ul className="list-disc list-outside ml-4 text-zinc-400 space-y-2 leading-relaxed">
-                <li><strong className="text-zinc-300 font-medium">Earthquake Detection Technology:</strong> Conceptualized and authored the architecture for a low-cost, sensor-based IoT network dedicated to rapid seismic detection.</li>
-                <li><strong className="text-zinc-300 font-medium">Networking Research Paper:</strong> Authored a technical paper outlining a mathematical approach to optimizing complex networking concepts.</li>
+                <li>
+                  <strong className="text-zinc-300 font-medium">AI Plagiarism Detector:</strong> Engineered an NLP-based detection system to identify plagiarism in both natural language text and source code. Applied advanced similarity techniques for accurate cross-document comparison.
+                </li>
+                <li>
+                  <strong className="text-zinc-300 font-medium">Earthquake Detection System:</strong> Designed a sensor-based IoT architecture for early-warning earthquake detection. Proposed for implementation at Meenakshi Sundararajan Engineering College.
+                </li>
+                <li>
+                  <strong className="text-zinc-300 font-medium">A Mathematical Approach to Networking:</strong> Authored a formal mathematical treatment of core networking principles and protocol concepts. Presented findings at multiple intercollege technical symposia.
+                </li>
               </ul>
               <div className="flex gap-2 mt-3 text-xs font-mono text-zinc-500">
                 <span className="px-2 py-1 bg-zinc-900 border border-zinc-800 rounded">IoT</span>
-                <span className="px-2 py-1 bg-zinc-900 border border-zinc-800 rounded">Mathematics</span>
-                <span className="px-2 py-1 bg-zinc-900 border border-zinc-800 rounded">C++</span>
+                <span className="px-2 py-1 bg-zinc-900 border border-zinc-800 rounded">Networking</span>
+                <span className="px-2 py-1 bg-zinc-900 border border-zinc-800 rounded">NLP</span>
               </div>
             </motion.div>
 
@@ -204,36 +248,20 @@ export default function Portfolio() {
             <motion.div className="hover:-translate-y-1 transition-transform duration-300" variants={itemVariants} initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-50px" }}>
               <h3 className="text-white font-medium flex items-center gap-2 mb-3 border-b border-zinc-800 pb-2"><FileText size={16} className="text-zinc-400"/> Industry Certifications</h3>
               <ul className="space-y-2.5 text-sm text-zinc-400">
-                <li><strong className="text-zinc-200 font-medium">Cisco Networking Academy:</strong> Verified in Python Essentials 1, Operating Systems Basics, and Networking Basics.</li>
-                <li><strong className="text-zinc-200 font-medium">MongoDB:</strong> MongoDB Basics Certified (Credly Verified).</li>
-                <li><strong className="text-zinc-200 font-medium">Wadhwani Foundation:</strong> Completed 42 hours of coursework in business modeling and financial planning via Ignite India.</li>
-                <li><strong className="text-zinc-200 font-medium">IBM SkillsBuild:</strong> "Getting Started with Artificial Intelligence" (Credly verified, Mar 12, 2026). {/* TODO: add certificate image asset once uploaded — see IBM SkillsBuild */}</li>
-                <li><strong className="text-zinc-200 font-medium">Anthropic:</strong> "AI Fluency: Framework & Foundations" (Completed). {/* TODO: add certificate image asset once uploaded — see Anthropic AI Fluency */}</li>
-                <li><strong className="text-zinc-200 font-medium">NPTEL:</strong> "Data Science for Engineers" (Completed, 8-week course, Jan–Mar 2026). {/* TODO: add certificate image asset once uploaded — see NPTEL Data Science */}</li>
-                <li><strong className="text-zinc-200 font-medium">NPTEL:</strong> "Cryptography and Network Security" (Completed, 12-week course, Jan–Apr 2026). {/* TODO: add certificate image asset once uploaded — see NPTEL Cryptography */}</li>
+                <li><strong className="text-zinc-200 font-medium">NPTEL:</strong> Data Science for Engineers (Elite, 69%); Cryptography & Network Security (Elite, 71%); Advanced Computer Networks (58%).</li>
+                <li><strong className="text-zinc-200 font-medium">Cisco NetAcad:</strong> Python Essentials 1, Networking Basics, Operating Systems Basics.</li>
+                <li><strong className="text-zinc-200 font-medium">IBM SkillsBuild:</strong> Getting Started with Artificial Intelligence.</li>
+                <li><strong className="text-zinc-200 font-medium">Udemy:</strong> Complete Python Bootcamp (In Progress).</li>
               </ul>
             </motion.div>
 
             {/* Achievements List */}
             <motion.div className="hover:-translate-y-1 transition-transform duration-300" variants={itemVariants} initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-50px" }}>
-              <h3 className="text-white font-medium flex items-center gap-2 mb-3 border-b border-zinc-800 pb-2"><GraduationCap size={16} className="text-zinc-400"/> Academic Recognitions</h3>
+              <h3 className="text-white font-medium flex items-center gap-2 mb-3 border-b border-zinc-800 pb-2"><GraduationCap size={16} className="text-zinc-400"/> Problem Solving & Achievements</h3>
               <ul className="space-y-2.5 text-sm text-zinc-400">
-                <li><strong className="text-zinc-200 font-medium">CELISTA '26:</strong> 3rd place, "Borderland" event, National Level Technical Symposium, Dept. of AI & Data Science, Meenakshi Sundararajan Engineering College (17.03.2026).</li>
-                <li><strong className="text-zinc-200 font-medium">ANU STEM Challenge (2021-22):</strong> Awarded Certificate of Merit by the Australian National University for ranking in the Top 15% of the India cohort.</li>
-                <li><strong className="text-zinc-200 font-medium">ISRO State Quiz (2020):</strong> Secured 3rd Prize at the state level during World Space Week, conducted by SDSC SHAR, ISRO.</li>
+                <li><strong className="text-zinc-200 font-medium">HackerRank:</strong> 6-Star Gold in Data Structures & Algorithms (DSA), 5-Star Silver in Java.</li>
+                <li><strong className="text-zinc-200 font-medium">LeetCode:</strong> Multiple Hard-difficulty DSA problems solved.</li>
               </ul>
-            </motion.div>
-
-            {/* Hackathons */}
-            <motion.div className="sm:col-span-2 hover:-translate-y-1 transition-transform duration-300" variants={itemVariants} initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-50px" }}>
-              <h3 className="text-white font-medium flex items-center gap-2 mb-3 border-b border-zinc-800 pb-2"><Briefcase size={16} className="text-zinc-400"/> Technical Competitions & Problem Solving</h3>
-              <div className="space-y-3 text-sm text-zinc-400">
-                {/* 
-                  TODO: MSEC "E-Cube" paper/project presentation — prize position unconfirmed
-                  TODO: Innovator's Fest '26 — prize position unconfirmed
-                  TODO: TechBeyond'26 — conflicting records (2nd place win vs. participation in "Mind Layer Hackathon – Frontend Player") — do not list as a win until confirmed
-                */}
-              </div>
             </motion.div>
 
           </div>
@@ -253,18 +281,27 @@ export default function Portfolio() {
              <motion.div className="flex gap-4 items-start border border-zinc-800/60 bg-zinc-900/30 p-5 rounded-xl hover:-translate-y-1 transition-transform duration-300" variants={itemVariants} initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-50px" }}>
                 <Code2 className="text-zinc-400 shrink-0 mt-1" size={20} />
                 <div>
-                  <h4 className="text-white font-medium">Freelance Software Developer</h4>
+                  <h4 className="text-white font-medium">Executive — Product Development Club</h4>
                   <p className="text-sm text-zinc-400 mt-1.5 leading-relaxed">
-                    Providing full-stack web development and technical solutions via Upwork. Responsible for end-to-end project lifecycle, from client requirements gathering to deployment and SEO optimization.
+                    Meenakshi Sundararajan Engineering College. Directed product ideation sessions and conducted technical workshops to upskill club members.
                   </p>
                 </div>
              </motion.div>
              <motion.div className="flex gap-4 items-start border border-zinc-800/60 bg-zinc-900/30 p-5 rounded-xl hover:-translate-y-1 transition-transform duration-300" variants={itemVariants} initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-50px" }}>
                 <Briefcase className="text-zinc-400 shrink-0 mt-1" size={20} />
                 <div>
-                  <h4 className="text-white font-medium">Executive, Product Development Club & Operations</h4>
+                  <h4 className="text-white font-medium">Secretary — EDI CSE Club</h4>
                   <p className="text-sm text-zinc-400 mt-1.5 leading-relaxed">
-                    Serve as an Executive at the collegiate level, frequently leading technical teams in competitions. Additionally hold a part-time management role at an insurance broker firm, focusing on operations and bridging the gap between technical concepts and non-technical stakeholders.
+                    Meenakshi Sundararajan Engineering College. Directed event planning and execution. Devised outreach strategies that grew club membership beyond its quota.
+                  </p>
+                </div>
+             </motion.div>
+             <motion.div className="flex gap-4 items-start border border-zinc-800/60 bg-zinc-900/30 p-5 rounded-xl hover:-translate-y-1 transition-transform duration-300" variants={itemVariants} initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-50px" }}>
+                <Database className="text-zinc-400 shrink-0 mt-1" size={20} />
+                <div>
+                  <h4 className="text-white font-medium">Part-Time People Management</h4>
+                  <p className="text-sm text-zinc-400 mt-1.5 leading-relaxed">
+                    Insurance Broker Firm. Coordinated team operations and facilitated seamless client interactions while balancing academic commitments.
                   </p>
                 </div>
              </motion.div>
