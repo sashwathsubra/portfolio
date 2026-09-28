@@ -147,9 +147,14 @@ export default function Portfolio() {
             <motion.div className="group hover:-translate-y-1 transition-transform duration-300" variants={itemVariants} initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-50px" }}>
               <div className="flex items-center justify-between mb-2">
                 <h3 className="text-xl font-medium text-white">Live Sign Language Translator</h3>
-                <a href="https://sign-language-translator-with-custo-beige.vercel.app" target="_blank" rel="noreferrer" className="flex items-center gap-1 text-sm font-medium text-blue-400 hover:text-blue-300 transition-colors">
-                  Live Site <ArrowUpRight size={16} />
-                </a>
+                <div className="flex items-center gap-3">
+                  <a href="https://github.com/sashwathsubra/sign-language-translator-with-custom-hand-sign-recognition" target="_blank" rel="noreferrer" className="flex items-center gap-1 text-sm font-medium text-zinc-400 hover:text-white transition-colors">
+                    Code <ArrowUpRight size={16} />
+                  </a>
+                  <a href="https://sign-language-translator-with-custo-beige.vercel.app" target="_blank" rel="noreferrer" className="flex items-center gap-1 text-sm font-medium text-blue-400 hover:text-blue-300 transition-colors">
+                    Live Site <ArrowUpRight size={16} />
+                  </a>
+                </div>
               </div>
               <p className="text-zinc-400 leading-relaxed">
                 Built a real-time sign-language translation web app that tracks live hand landmarks from a webcam feed and matches gestures against a user-trained vocabulary of recorded templates. Implemented a "teach a sign" flow letting users record and store custom gesture templates locally.
@@ -181,9 +186,14 @@ export default function Portfolio() {
             <motion.div className="group hover:-translate-y-1 transition-transform duration-300" variants={itemVariants} initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-50px" }}>
               <div className="flex items-center justify-between mb-2">
                 <h3 className="text-xl font-medium text-white">PDF Teacher</h3>
-                <a href="https://pdf-teacher-phi.vercel.app" target="_blank" rel="noreferrer" className="flex items-center gap-1 text-sm font-medium text-blue-400 hover:text-blue-300 transition-colors">
-                  Live Site <ArrowUpRight size={16} />
-                </a>
+                <div className="flex items-center gap-3">
+                  <a href="https://github.com/sashwathsubra/PDF-Teacher" target="_blank" rel="noreferrer" className="flex items-center gap-1 text-sm font-medium text-zinc-400 hover:text-white transition-colors">
+                    Code <ArrowUpRight size={16} />
+                  </a>
+                  <a href="https://pdf-teacher-phi.vercel.app" target="_blank" rel="noreferrer" className="flex items-center gap-1 text-sm font-medium text-blue-400 hover:text-blue-300 transition-colors">
+                    Live Site <ArrowUpRight size={16} />
+                  </a>
+                </div>
               </div>
               <p className="text-zinc-400 leading-relaxed">
                 Built a web app that lets users upload PDF study material and ask natural-language questions about it, as if asking a teacher.
